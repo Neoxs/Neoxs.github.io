@@ -1,0 +1,69 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    padding: 3rem 10rem;
+    background-color: $color-black !important;
+    color: $color-white;
+
+    @include respond(phone) {
+        text-align: center;
+    }
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+
+    /*backface-visibility: hidden;*/
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem; 
+        }
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: .75rem;
+    
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 0.2rem;
+            font-size: 2rem; 
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    letter-spacing: .2rem;
+
+    @include respond(tab-port) {
+        font-size: 1.5rem; 
+    }
+
+    @include respond(phone) {
+        font-size: 1.5rem; 
+    }
+}

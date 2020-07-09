@@ -1,0 +1,15 @@
+.section-collab {
+    &__social {
+        & a {
+            color: white;
+            font-size: 3rem;
+
+        }
+        & a:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
+
+}
+
+

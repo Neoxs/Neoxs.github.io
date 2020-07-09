@@ -1,0 +1,15 @@
+.navbar {
+    &__logo-box {
+        width: fit-content;
+        float: left;
+        font-weight: 700 !important;
+    }
+
+    &__logo {
+        color: white;
+    }
+
+    &__btn {
+        float: right;
+    }
+}
